@@ -60,7 +60,7 @@ export async function handleToolCall(name: string, args: Record<string, unknown>
             parsedResponse = JSON.parse(rawResponseText);
         } catch (jsonError) {
             error(`Failed to parse response as JSON: ${jsonError instanceof Error ? jsonError.message : String(jsonError)}`);
-            throw new Error("Invalid JSON response from IDE");
+            throw new Error("Invalid JSON response from IDE", { cause: jsonError });
         }
 
         if (parsedResponse.error) {
@@ -148,7 +148,7 @@ export async function fetchToolsList(endpoint: string): Promise<{ tools: Tool[] 
             success(`Successfully parsed tools list JSON`);
         } catch (jsonError) {
             error(`Failed to parse tools list as JSON: ${jsonError instanceof Error ? jsonError.message : String(jsonError)}`);
-            throw new Error(`Invalid tools list response: ${jsonError instanceof Error ? jsonError.message : String(jsonError)}`);
+            throw new Error(`Invalid tools list response: ${jsonError instanceof Error ? jsonError.message : String(jsonError)}`, { cause: jsonError });
         }
 
         if (parsedResponse.error) {
