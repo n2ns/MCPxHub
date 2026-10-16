@@ -19,7 +19,7 @@ Please be respectful and considerate of others when contributing to this project
 
 ```bash
 # Clone the repository
-git clone https://github.com/bugstan/MCPxHub.git
+git clone https://github.com/n2ns/MCPxHub.git
 cd McpxHub
 
 # Install dependencies
