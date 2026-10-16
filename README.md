@@ -15,7 +15,7 @@
 
 While Claude Desktop is powerful, it's isolated from your codebase. **MCP x Hub** bridges this gap. It acts as a smart gateway, auto-discovering your running IDE instances and proxying MCP tool calls securely.
 
-*   **⚡️ Universal Compatibility**: Works with **VS Code** and all its forks (**Cursor**, **Windsurf**, **Antigravity**) via [ggMCP4VSCode](https://github.com/bugstan/ggMCP4VSCode), as well as **JetBrains IDEs** (IntelliJ, PyCharm, WebStorm, etc.).
+*   **⚡️ Universal Compatibility**: Works with **VS Code** and all its forks (**Cursor**, **Windsurf**, **Antigravity**) via [ggMCP4VSCode](https://github.com/n2ns/ggMCP4VSCode), as well as **JetBrains IDEs** (IntelliJ, PyCharm, WebStorm, etc.).
 *   **🔌 Zero-Config Connection**: Automatically detects active IDE ports. No manual IP/Port editing needed.
 *   **🛠 standard-compliant**: Full support for **MCP JSON-RPC 2.0**, ensuring reliable communication and error handling.
 *   **🔄 Auto-Reconnection**: Robustly handles IDE restarts without crashing your AI session.
